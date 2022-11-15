@@ -23,3 +23,9 @@
   text-align: center;
 }
 
+.btn-del {
+  border-radius: 10px;
+  background-color: cadetblue;
+  font-size: 15px;
+}
+
