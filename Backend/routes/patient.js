@@ -1,14 +1,7 @@
 const express = require('express');
-const mysql = require('mysql2');
+const db = require('../database/connection');
 
 const router = express.Router();
-
-const db = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'azlkaz',
-  database: 'desafio_tecnico',
-});
 
 router.post('/patient', (req, res) => {
   const name = req.body.name;
