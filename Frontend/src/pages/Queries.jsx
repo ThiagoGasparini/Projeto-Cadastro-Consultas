@@ -13,14 +13,13 @@ function Queries() {
   }, []);
 
   const handleDelete = async (id) => {
-    Axios.delete(`http://localhost:3002/appointment/${id}`)
-    .then(({data}) => {
+    Axios.delete(`http://localhost:3002/appointment/${id}`).then(({ data }) => {
       const newArray = appointment.filter((user) => user.id !== id);
       setAppointment(newArray);
       console.log(data);
-    })
-    window.location.reload(true)
-  }
+    });
+    window.location.reload(true);
+  };
   return (
     <div>
       <Link to="/" className="link">
@@ -37,7 +36,9 @@ function Queries() {
               {el.appointmentDate.replace('T', ' às ').replace(/\.\d{3}Z/, '')}{' '}
               UTC
             </p>
-            <button className='btn-del' onClick={() => handleDelete(el.id)}>Deletar Consulta</button>
+            <button className="btn-del" onClick={() => handleDelete(el.id)}>
+              Deletar Consulta
+            </button>
           </div>
         ))}
       </div>

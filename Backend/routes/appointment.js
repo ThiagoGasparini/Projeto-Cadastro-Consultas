@@ -41,14 +41,18 @@ router.get('/appointment', (req, res) => {
 
 router.delete('/appointment/:id', (req, res) => {
   const id = req.params.id;
-  
-  db.query('DELETE FROM desafio_tecnico.appointment WHERE id = ?',[id], (err, result) => {
-    if (err) {
-      res.send(err);
-    } else {
-      res.send({ msg: 'Consulta deletada com sucesso!!!' });
+
+  db.query(
+    'DELETE FROM desafio_tecnico.appointment WHERE id = ?',
+    [id],
+    (err, result) => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send({ msg: 'Consulta deletada com sucesso!!!' });
+      }
     }
-  });
+  );
 });
 
 module.exports = router;
