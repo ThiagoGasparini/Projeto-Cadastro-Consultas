@@ -1,0 +1,14 @@
+.links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  margin-top: 4%;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  text-decoration:underline;
+}
