@@ -22,7 +22,7 @@ CREATE TABLE desafio_tecnico.patient(
       email VARCHAR(45) NOT NULL,
       cep VARCHAR(45) NOT NULL,
       address VARCHAR(45) NOT NULL,
-      number VARCHAR(45) NOT NULL,
+      number VARCHAR(45) NOT NULL
   ) engine = InnoDB;
 
   CREATE TABLE desafio_tecnico.appointment(
