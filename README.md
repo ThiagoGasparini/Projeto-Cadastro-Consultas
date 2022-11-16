@@ -13,7 +13,7 @@
         MYSQL_USER: 'user'
         MYSQL_PASSWORD: 'password'      
         MYSQL_ROOT_PASSWORD: 'password'
+## - Dentro da pasta Backend, executar o comando "npm run dev" na raíz do projeto
 ## - Crie as tabelas no banco de dados com o arquivo "database.sql"
 ## - Dentro da pasta Frontend, executar o comando "npm start" na raíz do projeto
-## - Dentro da pasta Backend, executar o comando "npm run dev" na raíz do projeto
 ## Tudo certo!!!
