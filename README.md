@@ -1,7 +1,7 @@
 # Bem vindo ao Projeto de Cadastro de Consultas
 
 ## Após clonar o repositório, siga os seguintes comandos:
-## - npm install na raíz do projeto
+## - npm install dentro da pasta Frontend e npm install dentro da pasta Backend
 ## - Crie as tabelas no banco de dados com o arquivo "database.sql"
 ## - se não tiver o mysql instalado, execute o comando "docker-compose up -d" dentro da pasta Backend
 ## - de start no container do mysql
