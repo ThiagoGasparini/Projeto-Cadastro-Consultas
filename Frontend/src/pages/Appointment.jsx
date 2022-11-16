@@ -37,8 +37,8 @@ function Appointment() {
       appointmentDate: parseDateTime(startDate),
     }).then((response) => {
       console.log(response);
+      navigate('/queries');
     });
-    navigate('/queries');
   };
 
   return (

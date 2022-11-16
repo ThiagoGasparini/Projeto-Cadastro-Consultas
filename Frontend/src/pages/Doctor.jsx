@@ -23,8 +23,8 @@ function Doctor() {
       crm: value.crm,
     }).then((response) => {
       console.log(response);
+      navigate('/patient');
     });
-    navigate('/patient');
   };
 
   const validationDoctor = yup.object().shape({

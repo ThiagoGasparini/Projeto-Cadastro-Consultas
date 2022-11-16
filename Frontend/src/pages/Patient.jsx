@@ -42,8 +42,8 @@ function Patient() {
       number: value.number,
     }).then((response) => {
       console.log(response);
+      navigate('/appointment');
     });
-    navigate('/appointment');
   };
 
   const validationPatient = yup.object().shape({

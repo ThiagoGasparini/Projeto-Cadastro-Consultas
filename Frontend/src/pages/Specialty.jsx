@@ -14,8 +14,8 @@ function Specialty() {
       name: value.name,
     }).then((response) => {
       console.log(response);
+      navigate('/doctor');
     });
-    navigate('/doctor');
   };
 
   const validationSpecialty = yup.object().shape({
