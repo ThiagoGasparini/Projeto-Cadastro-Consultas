@@ -27,7 +27,7 @@ function Queries() {
       </Link>
       <h1 className="title1">Consultas Agendadas</h1>
       <div className="container1">
-        {appointment?.map((el) => (
+        {appointment.length ? appointment.map((el) => (
           <div className="card">
             <p key={el.id}>Paciente: {el.patient}</p>
             <p key={el.id}>Médico(a): {el.doctor}</p>
@@ -40,7 +40,7 @@ function Queries() {
               Deletar Consulta
             </button>
           </div>
-        ))}
+        )) : <p className='condition'>Nenhuma Consulta Cadastrada!</p>}
       </div>
     </div>
   );
