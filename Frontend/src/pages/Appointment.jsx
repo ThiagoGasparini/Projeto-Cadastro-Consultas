@@ -37,6 +37,7 @@ function Appointment() {
       appointmentDate: parseDateTime(startDate),
     }).then((response) => {
       console.log(response);
+      alert('Consulta Cadastrada com sucesso!')
       navigate('/queries');
     });
   };
