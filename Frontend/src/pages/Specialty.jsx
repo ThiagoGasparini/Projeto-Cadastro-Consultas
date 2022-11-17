@@ -14,7 +14,7 @@ function Specialty() {
       name: value.name,
     }).then((response) => {
       console.log(response);
-      alert('Especialidade cadastrada com sucesso!')
+      alert('Especialidade Cadastrada com Sucesso!')
       navigate('/doctor');
     });
   };

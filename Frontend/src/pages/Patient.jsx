@@ -43,11 +43,14 @@ function Patient() {
     }).then((response) => {
       console.log(response);
       alert(response.data.msg)
-      navigate('/appointment');
-    }).catch((err) => {
-      console.log(err);
-    });
+      window.location.reload(true);
+    })
   };
+
+  const handleCLickRoute = (e) => {
+    e.preventDefault();
+    navigate('/appointment');
+  }
 
   const validationPatient = yup.object().shape({
     name: yup.string().required('Este campo é obrigatório para cadastrar'),
@@ -136,6 +139,9 @@ function Patient() {
             <ErrorMessage component="span" name="number" className="error" />
             <button className="specialty-btn-people" type="submit">
               Cadastrar
+            </button>
+            <button onClick={handleCLickRoute} className="specialty-btn-people" type="submit">
+              Cadastrar Consulta
             </button>
           </Form>
         </Formik>
