@@ -23,6 +23,7 @@ function Doctor() {
       crm: value.crm,
     }).then((response) => {
       console.log(response);
+      alert(response.data.msg)
       navigate('/patient');
     });
   };

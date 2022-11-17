@@ -9,8 +9,8 @@ router.post('/doctor', (req, res) => {
   const crm = req.body.crm;
 
   db.query(
-    'SELECT * FROM desafio_tecnico.doctor WHERE name = ?',
-    [name],
+    'SELECT * FROM desafio_tecnico.doctor WHERE crm = ?',
+    [crm],
     (err, result) => {
       if (err) {
         res.send(err);

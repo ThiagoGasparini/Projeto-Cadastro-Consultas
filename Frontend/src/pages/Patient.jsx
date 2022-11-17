@@ -42,7 +42,10 @@ function Patient() {
       number: value.number,
     }).then((response) => {
       console.log(response);
+      alert(response.data.msg)
       navigate('/appointment');
+    }).catch((err) => {
+      console.log(err);
     });
   };
 
